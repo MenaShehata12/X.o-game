@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+  direction: rtl;
+}
+
+
+/* blog section  */
+
+.blog {
+  margin: 50px 0;
+}
+
+.blog .top-sec{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.blog .top-sec h1{
+  font-size: 50px;
+  color: #2f2f31;
+  text-align: center;
+}
+
+.blog .top-sec span{
+  color: #ff8800;
+  font-size: 25px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.blog .top-sec span::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 110%;
+  width: 60px;
+  height: 3px;
+  background:  #ff8800;
+}
+.blog .top-sec span::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  width: 60px;
+  height: 3px;
+  background: #ff8800;
+}
+
+
+
+.blog .container{
+  width: 85%;
+  margin: auto;
+}
+.blog .boxs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.blog .boxs .box{
+  width: 330px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 3px 5px 8px #9292924d,
+              -3px 5px 8px #9292924d;
+  border: 1px solid transparent;
+  position: relative;
+  top: 0;
+  transition: 0.3s ease;
+}
+.blog .boxs .box:hover{
+  top: -15px;
+  border-color: #ff8800;
+}
+.blog .boxs .box:hover img{
+  transform: scale(1.05);
+}
+.blog .boxs .box .div-img img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+.blog .boxs .box .content{
+  padding: 10px 15px 30px;
+}
+.blog .boxs .box .content span{
+  padding: 2px 20px;
+  background: #e0e0e0;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff8800;
+}
+.blog .boxs .box .content h1{
+  font-size: 22px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #2f2f31;
+}
+.blog .boxs .box .content p{
+  margin-bottom: 30px;
+  color: #6c6d70;
+}
+.blog .boxs .box .content .btn{
+  background: #ff8800;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 1px solid #ff8800;
+  transition: 0.3s ease;
+}
+.blog .boxs .box .content .btn:hover{
+  background: #fff;
+  color: #ff8800;
+}
